@@ -1,5 +1,13 @@
-h1{
-    color: black;
-    background-color: orange;
-    font-family: 'Courier New', Courier, monospace;
+/* Estilo para el cuerpo de la página */
+body {
+    background-color: #f0f8ff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+/* Estilo para el título principal (h1) */
+h1 {
+    color: #4a90e2; /* Color del texto del título */
+    text-align: center; /* Alineación del texto */
+    padding: 20px; /* Espaciado alrededor del texto */
 }
