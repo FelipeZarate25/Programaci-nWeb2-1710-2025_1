@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const surveyDiv = document.getElementById('survey');
     const submitButton = document.getElementById('submit-button');
     const responseParagraph = document.getElementById('response');
-    
+
     // Mostrar la encuesta al hacer clic en el botón
     surveyButton.addEventListener('click', function() {
         surveyDiv.style.display = 'block';
     });
-    
+
     // Manejar el envío de la encuesta
     submitButton.addEventListener('click', function() {
         const favoriteColor = document.getElementById('favorite-color').value;

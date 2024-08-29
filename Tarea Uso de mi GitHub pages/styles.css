@@ -1,13 +1,41 @@
-/* Estilo para el cuerpo de la página */
 body {
     background-color: #f0f8ff; /* Color de fondo */
     color: #333; /* Color del texto */
     font-family: Arial, sans-serif; /* Fuente del texto */
+    text-align: center; /* Alineación del texto */
 }
 
-/* Estilo para el título principal (h1) */
 h1 {
     color: #4a90e2; /* Color del texto del título */
-    text-align: center; /* Alineación del texto */
     padding: 20px; /* Espaciado alrededor del texto */
+}
+
+#content {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff; /* Fondo blanco para el contenido */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+button {
+    background-color: #4a90e2; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357abd; /* Color de fondo del botón al pasar el mouse */
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }

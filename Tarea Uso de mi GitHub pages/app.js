@@ -1,12 +1,22 @@
-let nombre = prompt("Ingresa tu nombre");
-let edad = prompt("Ingresa tu edad");
-let peso = prompt("Ingresa tu peso en kilogramos");
-let estatura = prompt("Ingresa tu estatura en metros");
+document.addEventListener('DOMContentLoaded', function() {
+    const surveyButton = document.getElementById('survey-button');
+    const surveyDiv = document.getElementById('survey');
+    const submitButton = document.getElementById('submit-button');
+    const responseParagraph = document.getElementById('response');
 
-console.log("Nombre: " + nombre);
-console.log("Edad: " + edad);
-console.log("Peso: " + peso + " kg");
-console.log("Estatura: " + estatura + " m");
+    // Mostrar la encuesta al hacer clic en el botón
+    surveyButton.addEventListener('click', function() {
+        surveyDiv.style.display = 'block';
+    });
 
-let IMC = parseFloat(peso) / (parseFloat(estatura) * parseFloat(estatura));
-console.log("Tu Índice de Masa Corporal es: " + IMC.toFixed(2));
+    // Manejar el envío de la encuesta
+    submitButton.addEventListener('click', function() {
+        const favoriteColor = document.getElementById('favorite-color').value;
+        if (favoriteColor) {
+            responseParagraph.textContent = `Tu color favorito es el ${favoriteColor}.`;
+            surveyDiv.style.display = 'none'; // Ocultar la encuesta después de enviar
+        } else {
+            responseParagraph.textContent = 'Por favor, escribe tu color favorito.';
+        }
+    });
+});
