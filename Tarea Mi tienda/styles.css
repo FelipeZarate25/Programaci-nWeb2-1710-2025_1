@@ -1,0 +1,36 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    background-color: #fae20a;
+    color: black;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Estilo para el contenido que muestra mensajes */
+#contenido {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los mensajes de alerta */
+.alert {
+    background-color: #f44336; /* Rojo */
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
