@@ -1,0 +1,82 @@
+***************************************************************************************************************************************
+A)Imprimir en horizontal y vertical
+
+function imprimirA(n) {
+    let resultado = "";
+    for (let i = 0; i < n; i++) {
+        resultado += "*"; 
+    }
+    resultado += "\n"; 
+
+    for (let i = 1; i < n; i++) {
+        resultado += "*\n"; 
+    }
+    alert(resultado);
+}
+
+let n = 4;
+
+imprimirA(n);
+
+*************************************************************************************************************************************
+
+B)Imprimir en horizontal y vertical definiendo (N)
+function imprimirVerticalN(n) {
+    let resultado = "";
+    for (let i = 0; i < n; i++) {
+        resultado += "*\n";
+    }
+    alert(resultado);
+}
+
+function imprimirHorizontalN(n) {
+    let resultado = "";
+    for (let i = 0; i < n; i++) {
+        resultado += "*";
+    }
+    alert(resultado);
+}
+
+// Pedir al usuario la cantidad de asteriscos a imprimir
+let cV = parseInt(prompt("¿Cuántos asteriscos deseas imprimir en vertical?"));
+let cH = parseInt(prompt("¿Cuántos asteriscos deseas imprimir en horizontal?"));
+
+imprimirVerticalN(cV);
+imprimirHorizontalN(cH);
+
+*************************************************************************************************************************************
+
+C)Dibujar un cuadrado de N cantidades
+
+function dibujarCuadrado(n) {
+    let resultado = "";
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            resultado += "*"; 
+        }
+        resultado += "\n"; 
+    }
+    alert(resultado);
+}
+
+
+let tCuadrado = parseInt(prompt("¿Cuál es el tamaño del cuadrado de asteriscos?"));
+dibujarCuadrado(tCuadrado);
+
+***************************************************************************************************************************************
+
+D)Las tablas de multiplicas de 1 al 10
+
+function TablasDeMultiplicar() {
+    for (let i = 1; i <= 10; i++) {
+        let resultado = ""; 
+        for (let j = 1; j <= 10; j++) {
+            resultado += i + " x " + j + " = " + (i * j) + "\n"; 
+        }
+        alert("Tabla del " + i + ":\n\n" + resultado); 
+    }
+}
+
+TablasDeMultiplicar();
+
+***************************************************************************************************************************************
