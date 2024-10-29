@@ -1,0 +1,55 @@
+/* Estilos específicos para la página Quiénes Somos */
+body {
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ffeb3b; /* Fondo amarillo */
+}
+
+header {
+    background-color: #ff9800; /* Fondo naranja */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+nav ul li {
+    display: inline; /* Los elementos en línea */
+    margin: 0 15px; /* Margen entre los elementos */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Espaciado interno */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+    font-size: 1.2em; /* Tamaño de letra para los enlaces de navegación */
+}
+
+nav ul li a:hover {
+    background-color: #ff5722; /* Color de fondo al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff; /* Fondo blanco para la sección */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para h2 y p */
+h2 {
+    font-size: 2em; /* Tamaño de letra para h2 */
+    color: #004d99; /* Color del texto */
+}
+
+p {
+    font-size: 1.2em; /* Tamaño de letra para p */
+    color: #333; /* Color del texto */
+}

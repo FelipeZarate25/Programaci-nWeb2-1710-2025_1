@@ -1,0 +1,49 @@
+/* Estilos específicos para la página de Bienvenida */
+body {
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ffeb3b; /* Fondo amarillo */
+}
+
+header {
+    background-color: #ff9800; /* Fondo naranja */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em; /* Tamaño de letra para los enlaces de navegación */
+    padding: 5px 10px;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff; /* Fondo blanco para la sección */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para h2 y p */
+h2 {
+    font-size: 2em; /* Tamaño de letra para h2 */
+    color: #004d99; /* Color del texto */
+}
+
+p {
+    font-size: 1.2em; /* Tamaño de letra para p */
+    color: #333; /* Color del texto */
+}
