@@ -1,0 +1,207 @@
+:root {
+    /* Colores generales */
+    --color-primary: #131316;     /* Azul grisáceo oscuro */
+    --color-secondary: #34495e;   /* Azul grisáceo más claro */
+    --color-accent: #3498db;      /* Azul brillante */
+    --color-background: #ecf0f1;  /* Gris muy claro casi blanco */
+    --color-text: #131414;        /* Color del texto */
+  
+    /* Colores para botones */
+    --color-success: #4CAF50;     /* Verde para éxito */
+    --color-delete: #e74c3c;      /* Rojo para eliminar */
+}
+
+/* Reset de márgenes y rellenos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo general de la tipografía */
+body, button, input, table, th, td, form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: var(--color-text);
+}
+
+/* Fondo y estilo del cuerpo */
+body {
+    background-color: rgb(9, 75, 34); /* Color de fondo */
+    color: rgb(15, 15, 15); /* Color de texto */
+    min-height: 100vh;
+    padding: clamp(6px, 5vw, 22px);
+    position: relative;
+    overflow-x: hidden;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Contenedor centrado */
+.centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(4px, 2vw, 2px);
+    width: min(100%, 1200px);
+    margin: 0 auto;
+    padding: clamp(4px, 1.5vw, 6px);
+}
+
+/* Tabla y celdas */
+.borde {
+    background: var(--color-background);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Celdas de la tabla */
+th, td {
+    padding: clamp(6px, 1.2vw, 10px) clamp(8px, 1.5vw, 16px);
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    max-width: 300px;
+}
+
+th {
+    background-color: var(--color-secondary);
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Botones */
+.agregar, .eliminar {
+    min-width: clamp(100px, 15vw, 120px);
+    padding: clamp(8px, 1.5vw, 12px) clamp(16px, 2vw, 24px);
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: clamp(8px, 1.5vw, 12px);
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.agregar {
+    background-color: var(--color-success); /* Color verde para agregar */
+}
+
+.eliminar {
+    background-color: var(--color-delete); /* Color rojo para eliminar */
+}
+
+.agregar:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón sobre agregar */
+}
+
+.eliminar:hover {
+    background-color: #c0392b; /* Cambio de color al pasar el ratón sobre eliminar */
+}
+
+/* Formulario para agregar */
+.formagregar {
+    background-color: var(--color-background);
+    padding: clamp(12px, 2vw, 20px);
+    width: 100%;
+    max-width: min(90vw, 400px);
+    border-radius: clamp(10px, 2vw, 15px);
+    border: 1px solid #ddd;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Campos de entrada */
+.inputagregar {
+    width: 100%;
+    padding: clamp(8px, 1.2vw, 10px);
+    border: 1px solid #ddd;
+    border-radius: clamp(6px, 1.2vw, 10px);
+    font-size: clamp(14px, 1.5vw, 16px);
+    margin-bottom: clamp(8px, 1.2vw, 10px);
+    transition: border-color 0.3s ease;
+}
+
+.inputagregar:focus {
+    outline: none;
+    border-color: #5e4b8b;
+    box-shadow: 0 0 0 3px rgba(94, 75, 139, 0.1);
+}
+
+/* Contenedor de botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(6px, 1.5vw, 15px);
+    width: 100%;
+    margin-top: clamp(8px, 1.2vw, 12px);
+}
+
+/* Media queries para pantallas pequeñas */
+@media screen and (max-width: 760px) {
+    .botones {
+        gap: 8px;
+    }
+
+    .formagregar {
+        max-width: 100%;
+        padding: clamp(10px, 1.5vw, 15px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+    .botones {
+        flex-direction: column;
+        gap: 6px;
+    }
+    .agregar, .eliminar {
+        width: 100%;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    td, th {
+        min-width: 120px;
+        padding: 8px;
+    }
+    .formagregar {
+        padding: 12px;
+    }
+    .inputagregar {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .formagregar {
+        padding: 8px;
+    }
+    .inputagregar {
+        padding: 6px;
+        margin-bottom: 6px;
+    }
+    .agregar, .eliminar {
+        padding: 6px 12px;
+    }
+}
